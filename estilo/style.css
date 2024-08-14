@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Viga&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, Tahoma, sans-serif;
+    --fonte2: "Sriracha", cursive;
+    --fonte3: "Viga", sans-serif;
+
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,10 +18,11 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
+    background-color: rgb(35, 35, 35);
     color: white;
     text-align: center;
 }
@@ -19,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -33,6 +46,30 @@ head a, footer a {
 
 header a:hover, footer a:hover {
     text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(97, 96, 96);
+    color: white;
+}
+
+section.imagem {
+    display: inline-block;
+    background-color: rgb(62, 61, 61);
+
 }
 
 footer {
